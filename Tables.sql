@@ -69,10 +69,15 @@ Create table Dirección_vs_Tercero(
 
 
 
---Tabla de sucursal
+--Tabla de sucursal y almacen vs sucursal
 create table Sucursal(
 	idTercero int constraint FK_Tercero_Sucursal foreign key (idTercero)references Tercero(idTercero),
-	idDirección int constraint FK_Residencia_Sucursal foreign key (idDirección)references Residencia(idResidencia)
+	idDirección int constraint FK_Residencia_Sucursal foreign key (idDirección)references Residencia(idResidencia),
+	Estado bit
+)
+create table AlmacenVsSucursal(
+	idAlmacen int constraint FK_Almacen_AlmacenVsSucursal foreign key (idAlmacen)references Tercero(idTercero),
+	idSucursal int constraint FK_Sucursal_AlmacenVsSucursal foreign key (idSucursal)references Tercero(idTercero)
 )
 
 
@@ -97,9 +102,12 @@ Create table Telefono_vs_Tercero(
 
 
 
---La Tabla de la empresa del sistema
+--La Tabla de la empresa del sistema y empresa
 Create table EmpresaDelSistema(
 	idTercero int constraint FK_Tercero_EmpresaDelSistema foreign key (idTercero)references Tercero(idTercero)
+)
+Create table Empresa(
+	idTercero int constraint FK_Tercero_Empresa foreign key (idTercero)references Tercero(idTercero)
 )
 
 
@@ -193,7 +201,7 @@ Create table Almacen(
 --Tabla de Producto Vs Almacen
 Create table ProductoVsAlmacen(
 	idAlmacen int constraint FK_Tercero_ProductoVsAlmacen foreign key (idAlmacen)references Tercero(idTercero),
-	idProducto int constraint FK_Tercero_ProductoVsAlmacen foreign key (idProducto)references Producto(idProducto)
+	idProducto int constraint FK_Producto_ProductoVsAlmacen foreign key (idProducto)references Producto(idProducto)
 )
 
 
@@ -243,13 +251,13 @@ Create table Factura(
 	Fecha date,
 	idCliente int constraint FK_Tercero_Factura foreign key (idCliente)references Tercero(idTercero),
 	idNFC int constraint FK_NFC_Factura foreign key (idNFC)references NFC(idNFC),
-	idSucursal int constraint FK_Sucursal_Factura foreign key (idSucursal)references Sucursal(idSucursal),
-	idTipoDvisa int constraint FK_TipoDivisa_Factura foreign key (idTipoDivisa)references TipoDivisa(idTipoDivisa),
+	idSucursal int constraint FK_Sucursal_Factura foreign key (idSucursal)references Tercero(idTercero),
+	idTipoDivisa int constraint FK_TipoDivisa_Factura foreign key (idTipoDivisa)references TipoDivisa(idTipoDivisa),
 	idTipoPago int constraint FK_TipoPago_Factura foreign key (idTipoPago)references TipoPago(idTipoPago)
 )
 create table DetalleFactura(
 	idProducto int constraint FK_Producto_DetalleFacutra foreign key (idProducto)references Producto(idProducto),
-	idFacura int constraint FK_Factura_DetalleFactura foreign key (idFactura)references Factura(idFactura),
+	idFactura int constraint FK_Factura_DetalleFactura foreign key (idFactura)references Factura(idFactura),
 	CantidadVendida int
 )
 
@@ -265,7 +273,20 @@ create table ITEBIS(
 
 --Tabla de ITEBIS Vs Factura
 create table ITEBISVsFactura(
-	idFactura int constraint FK_Factura_ITEBISVsFactura (idFactura)references Factura(idFactura),
-	idITEBIS int constraint FK_ITEBIS_ITEBISVsFactura (idITEBIS)references ITEBIS(idITEBIS),
+	idFactura int constraint FK_Factura_ITEBISVsFactura foreign key (idFactura)references Factura(idFactura),
+	idITEBIS int constraint FK_ITEBIS_ITEBISVsFactura foreign key (idITEBIS)references ITEBIS(idITEBIS),
 	idProducto int constraint FK_Producto_ITEBISVsFactura foreign key (idProducto)references Producto(idProducto)
+)
+
+
+
+
+--Tabla de documentos Documento y TipoDocumento
+create table TipoDocumento(
+	idTipoDocumento int primary key identity(1,1),
+	Descripción nvarchar(300)
+)
+create table Documento(
+	idDocumento int primary key not null identity(1,1),
+	idTipoDocumento int constraint FK_TipoDocumento_Documento foreign key (idTipoDocumento)references TipoDocumento(idTipoDocumento)
 )
