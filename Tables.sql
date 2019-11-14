@@ -290,3 +290,53 @@ create table Documento(
 	idDocumento int primary key not null identity(1,1),
 	idTipoDocumento int constraint FK_TipoDocumento_Documento foreign key (idTipoDocumento)references TipoDocumento(idTipoDocumento)
 )
+
+create table Descuento(
+	idDescuento int primary key identity(1,1),
+	Descripción nvarchar(100),
+	Porcentaje float
+)
+
+
+
+--Tabla de Terreno, Cultivo, plantas, cuadrante, cuadre
+create table Terreno(
+	idTerreno int primary key not null identity(1,1),
+	DistanciaTerreno float,
+	Medida nvarchar(10)
+)
+create table Cuadre(
+	idCuadre int primary key not null identity(1,1),
+	FechaInicial date,
+	FechaFinal date,
+	ValorProducción int
+)
+create table Cuadrante(
+	idCuadrante int primary key not null identity(1,1),
+	Fila int,
+	Columna int
+)
+create table Cultivo(
+	idCultivo int primary key not null identity(1,1),
+	idSucursal int constraint FK_Sucursal_Cultivo foreign key (idSucursal)references Tercero(idTercero),
+	idTerreno int constraint FK_Terreno_Cultivo foreign key (idTerreno)references Terreno(idTerreno),
+	idCuadre int constraint FK_Cuadre_Cultivo foreign key (idCuadre)references Cuadre(idCuadre)
+)
+
+create table Plantas(
+	idPlanta int primary key not null identity(1,1),
+	idTerreno int constraint FK_Terreno_Plantas foreign key (idTerreno)references Terreno(idTerreno),
+	idCuadrante int constraint FK_Cuadrante_Plantas foreign key (idCuadrante)references Cuadrante(idCuadrante)
+)
+
+
+
+--Tabla de documentos vs tercero
+create table DocumentoVsTerceros(
+	idTercero int constraint FK_Tercero_DocumentoVsTercero foreign key (idTercero)references Tercero(idTercero),
+	idDocumento int constraint FK_Documento_DocumentoVsTercero foreign key (idDocumento)references Documento(idDocumento)
+)
+create table CuadranteVsTerreno(
+	idCuadrante int constraint FK_Cuadrante_CuadranteVsTerreno foreign key (idCuadrante)references Cuadrante(idCuadrante),
+	idTerreno int constraint FK_Terreno_CuadranteVsTerreno foreign key (idTerreno)references Terreno(idTerreno)
+)

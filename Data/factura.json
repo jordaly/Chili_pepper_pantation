@@ -1,0 +1,348 @@
+[
+    {
+        "Factura 1": [
+            {
+                "idFactura": "1",
+                "TipoFactura": [
+                    {
+                        "idTipoFactura": "1",
+                        "Descripción": "Factura Corriente"
+                    }
+                ],
+                "Fecha": "2019/11/13",
+                "Cliente": [
+                    {
+                        "Tercero": [
+                            {
+                                "idTercero": "1",
+                                "Nombre": "José",
+                                "Fecha_insersion": "2019/11/13",
+                                "Estado": "1"
+                            }
+                        ],
+                        "Estado": "1"
+                    }
+                ],
+                "NFC": [
+                    {
+                        "idNFC": "1",
+                        "NFC": "B0100000001"
+                    }
+                ],
+                "Sucursal": [
+                    {
+                        "Tercero": [
+                            {
+                                "idTercero": "2",
+                                "Nombre": "Sucursal Santiago",
+                                "Fecha_insersion": "2019/11/13",
+                                "Estado": "1"
+                            }
+                        ],
+                        "DireccionVsTercero": [
+                            {
+                                "Tercero": [
+                                    {
+                                        "idTercero": "2",
+                                        "Nombre": "José",
+                                        "Fecha_insersion": "2019/11/13",
+                                        "Estado": "1"
+                                    }
+                                ],
+                                "Dirección": [
+                                    {
+                                        "idResidencia": "1",
+                                        "Calle": [
+                                            {
+                                                "idCalle": "1",
+                                                "Calle": "Calle Duarte",
+                                                "Barrio": [
+                                                    {
+                                                        "idBarrio": "1",
+                                                        "Barrio": "La esperanza",
+                                                        "Sector": [
+                                                            {
+                                                                "idSector": "1",
+                                                                "Sector": "Juan Pablo Duarte",
+                                                                "Municipio": [
+                                                                    {
+                                                                        "idMunicipio": "1",
+                                                                        "Municipio": "Santiago De Los Caballeros",
+                                                                        "Provincia": [
+                                                                            {
+                                                                                "idProvincia": "1",
+                                                                                "Provincia": "Santiago",
+                                                                                "Región": [
+                                                                                    {
+                                                                                        "idRegión": "1",
+                                                                                        "Región": "Norte",
+                                                                                        "País": "Republica Dominicana"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "TipoDivisa": [
+                    {
+                        "idTipoDivisa": "1",
+                        "Descripción": "Peso Dominicano"
+                    }
+                ],
+                "idTipoPago": [
+                    {
+                        "idTipoPago": "1",
+                        "Descripción": "Efectivo"
+                    }
+                ],
+                "Total": "13500.0"
+            },
+            {
+                "DetalleFactura1": [
+                    {
+                        "Producto": [
+                            {
+                                "idProducto": "1",
+                                "FechaCreación": "2019/11/13",
+                                "Nombre": "Ají",
+                                "Descripción": "El ají es un alimento básico en las cocinas ya sea en su versión dulce o picante. Aunque su origen está en América Latina, el fruto, con forma de pimiento pequeño y colores rojizos y anaranjados, se ha extendido por todo el mundo para sazonar comidas o dejar sin aliento a los amantes del picante.",
+                                "CantidadExistente": "10000",
+                                "CantidadMinima": "500",
+                                "DetalleProducto": [
+                                    {
+                                        "idDetalleProducto": "1",
+                                        "Cantidad": "10000",
+                                        "Precio": "15.0",
+                                        "Medida": "Unidad"
+                                    }
+                                ]
+                            }
+                        ],
+                        "idFactura": "1",
+                        "CantidadVendida": "500",
+                        "Descuento": [
+                            {
+                                "idDescuento": "1",
+                                "Descripción": "Sin Descuento",
+                                "Porcentaje": "1"
+                            }
+                        ]
+                    },
+                    {
+                        "Producto": [
+                            {
+                                "idProducto": "2",
+                                "FechaCreación": "2019/11/13",
+                                "Nombre": "Semilla ají",
+                                "Descripción": "Semilla sobrante del cultivo del ají",
+                                "CantidadExistente": "100000",
+                                "CantidadMinima": "3000",
+                                "DetalleProducto": [
+                                    {
+                                        "idDetalleProducto": "2",
+                                        "Cantidad": "100000",
+                                        "Precio": "30.0",
+                                        "Medida": "Libra"
+                                    }
+                                ]
+                            }
+                        ],
+                        "idFactura": "1",
+                        "CantidadVendida": "200",
+                        "Descuento": [
+                            {
+                                "idDescuento": "1",
+                                "Descripción": "Sin Descuento",
+                                "Porcentaje": "1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "Factura 2": [
+            {
+                "idFactura": "2",
+                "TipoFactura": [
+                    {
+                        "idTipoFactura": "1",
+                        "Descripción": "Factura Corriente"
+                    }
+                ],
+                "Fecha": "2019/11/13",
+                "Cliente": [
+                    {
+                        "Tercero": [
+                            {
+                                "idTercero": "3",
+                                "Nombre": "Ana",
+                                "Fecha_insersion": "2019/11/13",
+                                "Estado": "1"
+                            }
+                        ],
+                        "Estado": "1"
+                    }
+                ],
+                "NFC": [
+                    {
+                        "idNFC": "1",
+                        "NFC": "B0100000002"
+                    }
+                ],
+                "Sucursal": [
+                    {
+                        "Tercero": [
+                            {
+                                "idTercero": "2",
+                                "Nombre": "Sucursal Santiago",
+                                "Fecha_insersion": "2019/11/13",
+                                "Estado": "1"
+                            }
+                        ],
+                        "DireccionVsTercero": [
+                            {
+                                "Tercero": [
+                                    {
+                                        "idTercero": "2",
+                                        "Nombre": "Sucursal Santiago",
+                                        "Fecha_insersion": "2019/11/13",
+                                        "Estado": "1"
+                                    }
+                                ],
+                                "Dirección": [
+                                    {
+                                        "idResidencia": "1",
+                                        "Calle": [
+                                            {
+                                                "idCalle": "1",
+                                                "Calle": "Calle Duarte",
+                                                "Barrio": [
+                                                    {
+                                                        "idBarrio": "1",
+                                                        "Barrio": "La esperanza",
+                                                        "Sector": [
+                                                            {
+                                                                "idSector": "1",
+                                                                "Sector": "Juan Pablo Duarte",
+                                                                "Municipio": [
+                                                                    {
+                                                                        "idMunicipio": "1",
+                                                                        "Municipio": "Santiago De Los Caballeros",
+                                                                        "Provincia": [
+                                                                            {
+                                                                                "idProvincia": "1",
+                                                                                "Provincia": "Santiago",
+                                                                                "Región": [
+                                                                                    {
+                                                                                        "idRegión": "1",
+                                                                                        "Región": "Norte",
+                                                                                        "País": "Republica Dominicana"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "TipoDivisa": [
+                    {
+                        "idTipoDivisa": "1",
+                        "Descripción": "Peso Dominicano"
+                    }
+                ],
+                "idTipoPago": [
+                    {
+                        "idTipoPago": "2",
+                        "Descripción": "Trarjeta De Credito"
+                    }
+                ],
+                "Total": "4500.0"
+            },
+            {
+                "DetalleFactura1": [
+                    {
+                        "Producto": [
+                            {
+                                "idProducto": "1",
+                                "FechaCreación": "2019/11/13",
+                                "Nombre": "Ají",
+                                "Descripción": "El ají es un alimento básico en las cocinas ya sea en su versión dulce o picante. Aunque su origen está en América Latina, el fruto, con forma de pimiento pequeño y colores rojizos y anaranjados, se ha extendido por todo el mundo para sazonar comidas o dejar sin aliento a los amantes del picante.",
+                                "CantidadExistente": "10000",
+                                "CantidadMinima": "500",
+                                "DetalleProducto": [
+                                    {
+                                        "idDetalleProducto": "1",
+                                        "Cantidad": "10000",
+                                        "Precio": "15.0",
+                                        "Medida": "Unidad"
+                                    }
+                                ]
+                            }
+                        ],
+                        "idFactura": "1",
+                        "CantidadVendida": "100",
+                        "Descuento": [
+                            {
+                                "idDescuento": "1",
+                                "Descripción": "Sin Descuento",
+                                "Porcentaje": "1"
+                            }
+                        ]
+                    },
+                    {
+                        "Producto": [
+                            {
+                                "idProducto": "2",
+                                "FechaCreación": "2019/11/13",
+                                "Nombre": "Semilla ají",
+                                "Descripción": "Semilla sobrante del cultivo del ají",
+                                "CantidadExistente": "100000",
+                                "CantidadMinima": "3000",
+                                "DetalleProducto": [
+                                    {
+                                        "idDetalleProducto": "2",
+                                        "Cantidad": "100000",
+                                        "Precio": "30.0",
+                                        "Medida": "Libra"
+                                    }
+                                ]
+                            }
+                        ],
+                        "idFactura": "1",
+                        "CantidadVendida": "100",
+                        "Descuento": [
+                            {
+                                "idDescuento": "1",
+                                "Descripción": "Sin Descuento",
+                                "Porcentaje": "1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
