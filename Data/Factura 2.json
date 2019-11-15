@@ -1,0 +1,52 @@
+[
+    {
+        "idFactura": "1",
+        "idTipoFactura": "1",
+        "Fecha": "2019/11/13",
+        "idCliente": "1",
+        "idNFC": "1",
+        "idSucursal": "2",
+        "idTipoDivisa": "1",
+        "idTipoPago": "1",
+        "Total": "13500.0",
+        "DetalleFactura": [
+            {
+                "idProducto": "1",
+                "idFactura": "1",
+                "CantidadVendida": "500",
+                "idDescuento": "1"
+            },
+            {
+                "idProducto": "2",
+                "idFactura": "1",
+                "CantidadVendida": "200",
+                "idDescuento": "1"
+            }
+        ]
+    },
+    {
+        "idFactura": "2",
+        "idTipoFactura": "1",
+        "Fecha": "2019/11/13",
+        "idCliente": "2",
+        "idNFC": "2",
+        "idSucursal": "2",
+        "idTipoDivisa": "1",
+        "idTipoPago": "1",
+        "Total": "4500.0",
+        "DetalleFactura": [
+            {
+                "idProducto": "1",
+                "idFactura": "2",
+                "CantidadVendida": "100",
+                "idDescuento": "1"
+            },
+            {
+                "idProducto": "2",
+                "idFactura": "2",
+                "CantidadVendida": "100",
+                "idDescuento": "1"
+            }
+        ]
+    }
+]
