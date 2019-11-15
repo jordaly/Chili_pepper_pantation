@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <row>
+    <Factura_1>
+      <idFactura>1</idFactura>
+      <TipoFactura>
+        <idTipoFactura>1</idTipoFactura>
+        <Descripción>Factura Corriente</Descripción>
+      </TipoFactura>
+      <Fecha>2019/11/13</Fecha>
+      <Cliente>
+        <Tercero>
+          <idTercero>1</idTercero>
+          <Nombre>José</Nombre>
+          <Fecha_insersion>2019/11/13</Fecha_insersion>
+          <Estado>1</Estado>
+        </Tercero>
+        <Estado>1</Estado>
+      </Cliente>
+      <NFC>
+        <idNFC>1</idNFC>
+        <NFC>B0100000001</NFC>
+      </NFC>
+      <Sucursal>
+        <Tercero>
+          <idTercero>2</idTercero>
+          <Nombre>Sucursal Santiago</Nombre>
+          <Fecha_insersion>2019/11/13</Fecha_insersion>
+          <Estado>1</Estado>
+        </Tercero>
+        <DireccionVsTercero>
+          <Tercero>
+            <idTercero>2</idTercero>
+            <Nombre>José</Nombre>
+            <Fecha_insersion>2019/11/13</Fecha_insersion>
+            <Estado>1</Estado>
+          </Tercero>
+          <Dirección>
+            <idResidencia>1</idResidencia>
+            <Calle>
+              <idCalle>1</idCalle>
+              <Calle>Calle Duarte</Calle>
+              <Barrio>
+                <idBarrio>1</idBarrio>
+                <Barrio>La esperanza</Barrio>
+                <Sector>
+                  <idSector>1</idSector>
+                  <Sector>Juan Pablo Duarte</Sector>
+                  <Municipio>
+                    <idMunicipio>1</idMunicipio>
+                    <Municipio>Santiago De Los Caballeros</Municipio>
+                    <Provincia>
+                      <idProvincia>1</idProvincia>
+                      <Provincia>Santiago</Provincia>
+                      <Región>
+                        <idRegión>1</idRegión>
+                        <Región>Norte</Región>
+                        <País>Republica Dominicana</País>
+                      </Región>
+                    </Provincia>
+                  </Municipio>
+                </Sector>
+              </Barrio>
+            </Calle>
+          </Dirección>
+        </DireccionVsTercero>
+      </Sucursal>
+      <TipoDivisa>
+        <idTipoDivisa>1</idTipoDivisa>
+        <Descripción>Peso Dominicano</Descripción>
+      </TipoDivisa>
+      <idTipoPago>
+        <idTipoPago>1</idTipoPago>
+        <Descripción>Efectivo</Descripción>
+      </idTipoPago>
+      <Total>13500.0</Total>
+    </Factura_1>
+    <Factura_1>
+      <DetalleFactura1>
+        <Producto>
+          <idProducto>1</idProducto>
+          <FechaCreación>2019/11/13</FechaCreación>
+          <Nombre>Ají</Nombre>
+          <Descripción>El ají es un alimento básico en las cocinas ya sea en su versión dulce o picante. Aunque su origen está en América Latina, el fruto, con forma de pimiento pequeño y colores rojizos y anaranjados, se ha extendido por todo el mundo para sazonar comidas o dejar sin aliento a los amantes del picante.</Descripción>
+          <CantidadExistente>10000</CantidadExistente>
+          <CantidadMinima>500</CantidadMinima>
+          <DetalleProducto>
+            <idDetalleProducto>1</idDetalleProducto>
+            <Cantidad>10000</Cantidad>
+            <Precio>15.0</Precio>
+            <Medida>Unidad</Medida>
+          </DetalleProducto>
+        </Producto>
+        <idFactura>1</idFactura>
+        <CantidadVendida>500</CantidadVendida>
+        <Descuento>
+          <idDescuento>1</idDescuento>
+          <Descripción>Sin Descuento</Descripción>
+          <Porcentaje>1</Porcentaje>
+        </Descuento>
+      </DetalleFactura1>
+      <DetalleFactura1>
+        <Producto>
+          <idProducto>2</idProducto>
+          <FechaCreación>2019/11/13</FechaCreación>
+          <Nombre>Semilla ají</Nombre>
+          <Descripción>Semilla sobrante del cultivo del ají</Descripción>
+          <CantidadExistente>100000</CantidadExistente>
+          <CantidadMinima>3000</CantidadMinima>
+          <DetalleProducto>
+            <idDetalleProducto>2</idDetalleProducto>
+            <Cantidad>100000</Cantidad>
+            <Precio>30.0</Precio>
+            <Medida>Libra</Medida>
+          </DetalleProducto>
+        </Producto>
+        <idFactura>1</idFactura>
+        <CantidadVendida>200</CantidadVendida>
+        <Descuento>
+          <idDescuento>1</idDescuento>
+          <Descripción>Sin Descuento</Descripción>
+          <Porcentaje>1</Porcentaje>
+        </Descuento>
+      </DetalleFactura1>
+    </Factura_1>
+    <Factura_2>
+      <idFactura>2</idFactura>
+      <TipoFactura>
+        <idTipoFactura>1</idTipoFactura>
+        <Descripción>Factura Corriente</Descripción>
+      </TipoFactura>
+      <Fecha>2019/11/13</Fecha>
+      <Cliente>
+        <Tercero>
+          <idTercero>3</idTercero>
+          <Nombre>Ana</Nombre>
+          <Fecha_insersion>2019/11/13</Fecha_insersion>
+          <Estado>1</Estado>
+        </Tercero>
+        <Estado>1</Estado>
+      </Cliente>
+      <NFC>
+        <idNFC>1</idNFC>
+        <NFC>B0100000002</NFC>
+      </NFC>
+      <Sucursal>
+        <Tercero>
+          <idTercero>2</idTercero>
+          <Nombre>Sucursal Santiago</Nombre>
+          <Fecha_insersion>2019/11/13</Fecha_insersion>
+          <Estado>1</Estado>
+        </Tercero>
+        <DireccionVsTercero>
+          <Tercero>
+            <idTercero>2</idTercero>
+            <Nombre>Sucursal Santiago</Nombre>
+            <Fecha_insersion>2019/11/13</Fecha_insersion>
+            <Estado>1</Estado>
+          </Tercero>
+          <Dirección>
+            <idResidencia>1</idResidencia>
+            <Calle>
+              <idCalle>1</idCalle>
+              <Calle>Calle Duarte</Calle>
+              <Barrio>
+                <idBarrio>1</idBarrio>
+                <Barrio>La esperanza</Barrio>
+                <Sector>
+                  <idSector>1</idSector>
+                  <Sector>Juan Pablo Duarte</Sector>
+                  <Municipio>
+                    <idMunicipio>1</idMunicipio>
+                    <Municipio>Santiago De Los Caballeros</Municipio>
+                    <Provincia>
+                      <idProvincia>1</idProvincia>
+                      <Provincia>Santiago</Provincia>
+                      <Región>
+                        <idRegión>1</idRegión>
+                        <Región>Norte</Región>
+                        <País>Republica Dominicana</País>
+                      </Región>
+                    </Provincia>
+                  </Municipio>
+                </Sector>
+              </Barrio>
+            </Calle>
+          </Dirección>
+        </DireccionVsTercero>
+      </Sucursal>
+      <TipoDivisa>
+        <idTipoDivisa>1</idTipoDivisa>
+        <Descripción>Peso Dominicano</Descripción>
+      </TipoDivisa>
+      <idTipoPago>
+        <idTipoPago>2</idTipoPago>
+        <Descripción>Trarjeta De Credito</Descripción>
+      </idTipoPago>
+      <Total>4500.0</Total>
+    </Factura_2>
+    <Factura_2>
+      <DetalleFactura1>
+        <Producto>
+          <idProducto>1</idProducto>
+          <FechaCreación>2019/11/13</FechaCreación>
+          <Nombre>Ají</Nombre>
+          <Descripción>El ají es un alimento básico en las cocinas ya sea en su versión dulce o picante. Aunque su origen está en América Latina, el fruto, con forma de pimiento pequeño y colores rojizos y anaranjados, se ha extendido por todo el mundo para sazonar comidas o dejar sin aliento a los amantes del picante.</Descripción>
+          <CantidadExistente>10000</CantidadExistente>
+          <CantidadMinima>500</CantidadMinima>
+          <DetalleProducto>
+            <idDetalleProducto>1</idDetalleProducto>
+            <Cantidad>10000</Cantidad>
+            <Precio>15.0</Precio>
+            <Medida>Unidad</Medida>
+          </DetalleProducto>
+        </Producto>
+        <idFactura>1</idFactura>
+        <CantidadVendida>100</CantidadVendida>
+        <Descuento>
+          <idDescuento>1</idDescuento>
+          <Descripción>Sin Descuento</Descripción>
+          <Porcentaje>1</Porcentaje>
+        </Descuento>
+      </DetalleFactura1>
+      <DetalleFactura1>
+        <Producto>
+          <idProducto>2</idProducto>
+          <FechaCreación>2019/11/13</FechaCreación>
+          <Nombre>Semilla ají</Nombre>
+          <Descripción>Semilla sobrante del cultivo del ají</Descripción>
+          <CantidadExistente>100000</CantidadExistente>
+          <CantidadMinima>3000</CantidadMinima>
+          <DetalleProducto>
+            <idDetalleProducto>2</idDetalleProducto>
+            <Cantidad>100000</Cantidad>
+            <Precio>30.0</Precio>
+            <Medida>Libra</Medida>
+          </DetalleProducto>
+        </Producto>
+        <idFactura>1</idFactura>
+        <CantidadVendida>100</CantidadVendida>
+        <Descuento>
+          <idDescuento>1</idDescuento>
+          <Descripción>Sin Descuento</Descripción>
+          <Porcentaje>1</Porcentaje>
+        </Descuento>
+      </DetalleFactura1>
+    </Factura_2>
+  </row>
+</root>
