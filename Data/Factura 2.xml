@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
   <row>
     <idFactura>1</idFactura>
@@ -12,13 +12,13 @@
     <Total>13500.0</Total>
     <DetalleFactura>
       <idProducto>1</idProducto>
-      <idFactura>1</idFactura>
+      <idFactura>3</idFactura>
       <CantidadVendida>500</CantidadVendida>
       <idDescuento>1</idDescuento>
     </DetalleFactura>
     <DetalleFactura>
       <idProducto>2</idProducto>
-      <idFactura>1</idFactura>
+      <idFactura>3</idFactura>
       <CantidadVendida>200</CantidadVendida>
       <idDescuento>1</idDescuento>
     </DetalleFactura>
@@ -27,7 +27,7 @@
     <idFactura>2</idFactura>
     <idTipoFactura>1</idTipoFactura>
     <Fecha>2019/11/13</Fecha>
-    <idCliente>2</idCliente>
+    <idCliente>3</idCliente>
     <idNFC>2</idNFC>
     <idSucursal>2</idSucursal>
     <idTipoDivisa>1</idTipoDivisa>
@@ -35,13 +35,13 @@
     <Total>4500.0</Total>
     <DetalleFactura>
       <idProducto>1</idProducto>
-      <idFactura>2</idFactura>
+      <idFactura>4</idFactura>
       <CantidadVendida>100</CantidadVendida>
       <idDescuento>1</idDescuento>
     </DetalleFactura>
     <DetalleFactura>
       <idProducto>2</idProducto>
-      <idFactura>2</idFactura>
+      <idFactura>4</idFactura>
       <CantidadVendida>100</CantidadVendida>
       <idDescuento>1</idDescuento>
     </DetalleFactura>
